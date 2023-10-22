@@ -6,12 +6,6 @@ import sys
 import os
 from urllib import request, parse
 import urllib
-import hashlib
-import datetime
-import time
-from rfeed import *
-import feedparser
-
 # pip install pygtrans -i https://pypi.org/simple
 # ref:https://zhuanlan.zhihu.com/p/390801784
 # ref:https://beautifulsoup.readthedocs.io/zh_CN/latest/
@@ -19,38 +13,39 @@ import feedparser
 # client = Translate()
 # text = client.translate('Google Translate')
 # print(text.translatedText)  # 谷歌翻译
-
+import hashlib
 def get_md5_value(src):
     _m = hashlib.md5()
     _m.update(src.encode('utf-8'))
     return _m.hexdigest()
 
-
+import datetime
+import time
+from rfeed import *
+import feedparser
 def getTime(e):
     try:
-        struct_time = e.published_parsed
+        struct_time =e.published_parsed
     except:
-        struct_time = time.localtime()
+        struct_time =time.localtime()
     return datetime.datetime(*struct_time[:6])
-
 def getSubtitle(e):
     try:
-        sub = e.subtitle
+        sub =e.subtitle
     except:
-        sub = ""
+        sub =""
     return sub
-
 class GoogleTran:
     def __init__(self, url,  source  = 'auto', target  = 'zh-CN'):
         self.url = url
-        self.source = source
-        self.target = target
+        self.source= source
+        self.target=target
 
         self.d = feedparser.parse(url)
         self.GT = Translate()
     
     def tr(self,content):
-        if self.source =='proxy': #代理
+        if self.source=='proxy': #代理
             return content
         tt = self.GT.translate(content,target=self.target,source=self.source)
         try:
@@ -81,7 +76,6 @@ class GoogleTran:
 
 
 
-
 with open('test.ini', mode = 'r') as f:
     ini_data = parse.unquote(f.read())
 config = configparser.ConfigParser()
@@ -97,9 +91,9 @@ def set_cfg(sec,name,value):
     config[sec][name]='"%s"'%value
 
 def get_cfg_tra(sec):
-    cc = config.get(sec,"action").strip('"')
-    target = ""
-    source = ""
+    cc=config.get(sec,"action").strip('"')
+    target=""
+    source=""
     if cc == "auto":
         source  = 'auto'
         target  = 'zh-CN'
@@ -118,43 +112,33 @@ try:
     os.makedirs(BASE)
 except:
     pass
-links = []
-
+links=[]
 def tran(sec):
-    out_dir = os.path.join(BASE, get_cfg(sec, 'name'))
-    xml_file = os.path.join(BASE, f'{get_cfg(sec, "name")}.xml')
-    url = get_cfg(sec,'url')
-    max_item = int(get_cfg(sec,'max'))
-    old_md5 = get_cfg(sec,'md5')
-    source,target = get_cfg_tra(sec)
+    out_dir= BASE + get_cfg(sec,'name')
+    url=get_cfg(sec,'url')
+    max_item=int(get_cfg(sec,'max'))
+    old_md5=get_cfg(sec,'md5')
+    source,target=get_cfg_tra(sec)
     global links
 
-    links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(xml_file))]
+    links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(out_dir))]
 
-    new_md5= get_md5_value(url)
+    new_md5= get_md5_value(url) # no use now
 
     if old_md5 == new_md5:
         return
     else:
-         set_cfg(sec,'md5',new_md5)
+        set_cfg(sec,'md5',new_md5)
     
     c = GoogleTran(url,target=target,source=source).get_newconent(max=max_item)
     
-    # 如果 RSS 文件存在，则先删除原有内容
-    if os.path.isfile(xml_file):
-        try:
-            with open(xml_file, 'w', encoding='utf-8') as f:
-                pass
-        except Exception as e:
-            print("Error occurred when clearing RSS file %s for %s: %s" % (xml_file, sec, str(e)))
-            return
 
-    try:
-        with open(xml_file, 'w', encoding='utf-8') as f:
-            f.write(c)
-    except Exception as e:
-        print("Error occurred when writing RSS file %s for %s: %s" % (xml_file, sec, str(e)))
-        return
+    with open(out_dir,'w',encoding='utf-8') as f:
+
+        f.write(c)
+        #print(c)
+        #f.write(content)
+    print("GT: "+ url +" > "+ out_dir)
 
 for x in secs[1:]:
     tran(x)
@@ -166,7 +150,7 @@ with open('test.ini','w') as configfile:
 
 def get_idx(l):
     for idx,line in enumerate(l):
-        if "## 已转换翻译源" in line:
+        if "## rss translate links" in line:
             return idx+2
 YML="README.md"
 
