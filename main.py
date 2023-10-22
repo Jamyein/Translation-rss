@@ -6,6 +6,12 @@ import sys
 import os
 from urllib import request, parse
 import urllib
+import hashlib
+import datetime
+import time
+from rfeed import *
+import feedparser
+
 # pip install pygtrans -i https://pypi.org/simple
 # ref:https://zhuanlan.zhihu.com/p/390801784
 # ref:https://beautifulsoup.readthedocs.io/zh_CN/latest/
@@ -13,16 +19,12 @@ import urllib
 # client = Translate()
 # text = client.translate('Google Translate')
 # print(text.translatedText)  # 谷歌翻译
-import hashlib
+
 def get_md5_value(src):
     _m = hashlib.md5()
     _m.update(src.encode('utf-8'))
     return _m.hexdigest()
 
-import datetime
-import time
-from rfeed import *
-import feedparser
 def getTime(e):
     try:
         struct_time =e.published_parsed
@@ -114,14 +116,15 @@ except:
     pass
 links=[]
 def tran(sec):
-    out_dir= BASE + get_cfg(sec,'name')
+    out_dir = os.path.join(BASE, get_cfg(sec, 'name'))
+    xml_file = os.path.join(BASE, f'{get_cfg(sec, "name")}.xml')
     url=get_cfg(sec,'url')
     max_item=int(get_cfg(sec,'max'))
     old_md5=get_cfg(sec,'md5')
     source,target=get_cfg_tra(sec)
     global links
 
-    links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(out_dir))]
+    links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(xml_file))]
 
     new_md5= get_md5_value(url) # no use now
 
@@ -133,12 +136,12 @@ def tran(sec):
     c = GoogleTran(url,target=target,source=source).get_newconent(max=max_item)
     
 
-    with open(out_dir,'w',encoding='utf-8') as f:
+    with open(xml_file,'w',encoding='utf-8') as f:
 
         f.write(c)
         #print(c)
         #f.write(content)
-    print("GT: "+ url +" > "+ out_dir)
+    print("GT: "+ url +" > "+ xml_file)
 
 for x in secs[1:]:
     tran(x)
@@ -150,7 +153,7 @@ with open('test.ini','w') as configfile:
 
 def get_idx(l):
     for idx,line in enumerate(l):
-        if "## rss translate links" in line:
+        if "## 已转换翻译源" in line:
             return idx+2
 YML="README.md"
 
