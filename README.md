@@ -9,6 +9,8 @@
 
 查看[ RSS-Translation ](https://jamyein.github.io/Translation-rss)使用[ 教程 ](https://www.tjsky.net/tutorial/644)修改自[ Rss-translate ](https://github.com/rcy1314/Rss-Translation/)
 
+目前 test.ini 内 name 后不再需要手动添加xml后缀
+
 ## 已转换翻译源
 
  - source001 [http://feeds.feedburner.com/collabfund](http://feeds.feedburner.com/collabfund) -> [collabfund](rss/collabfund.xml)
