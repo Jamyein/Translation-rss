@@ -15,7 +15,10 @@
 
  - source001 [http://feeds.feedburner.com/collabfund](http://feeds.feedburner.com/collabfund) -> [collabfund](rss/collabfund.xml)
  - source002 [https://feedx.net/rss/wikiindex.xml](https://feedx.net/rss/wikiindex.xml) -> [wikiindex](rss/wikiindex.xml)
- - source003 [https://whatsimportant.substack.com/feed](https://whatsimportant.substack.com/feed) -> [substack](rss/substack.xml)
- - source004 [https://fs.blog/feed/](https://fs.blog/feed/) -> [fs](rss/fs.xml)
+ - source003 [https://whatsimportant.substack.com/feed](https://whatsimportant.substack.com/feed) -> [whatsimportant](rss/whatsimportant.xml)
+ - source004 [https://feeds.feedblitz.com/marginalrevolution](https://feeds.feedblitz.com/marginalrevolution) -> [marginalrevolution](rss/marginalrevolution.xml)
  - source005 [https://ralphammer.com/feed/](https://ralphammer.com/feed/) -> [ralphammer](rss/ralphammer.xml)
- - source006 [https://plug-world.com/index.xml](https://plug-world.com/index.xml) -> [plug-world](rss/plug-world.xml)
+ - source006 [https://knowablemagazine.org/rss](https://knowablemagazine.org/rss) -> [knowablemagazine](rss/knowablemagazine.xml)
+ - source007 [https://www.lesswrong.com/feed.xml](https://www.lesswrong.com/feed.xml) -> [LessWrong](rss/LessWrong.xml)
+ - source008 [https://www.profgalloway.com/feed/](https://www.profgalloway.com/feed/) -> [profgalloway](rss/profgalloway.xml)
+ - source009 [https://moretothat.com/feed/](https://moretothat.com/feed/) -> [moretothat](rss/moretothat.xml)
