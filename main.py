@@ -16,8 +16,11 @@ import hashlib
 import datetime
 
 # 配置日志输出到控制台
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
+try:
+    from bs4 import BeautifulSoup
+except ImportError as e:
+    logging.error("BeautifulSoup library is not installed. Please install it using pip.")
+    raise e
 # pip install pygtrans -i https://pypi.org/simple
 # ref:https://zhuanlan.zhihu.com/p/390801784
 # ref:https://beautifulsoup.readthedocs.io/zh_CN/latest/
@@ -27,18 +30,21 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # print(text.translatedText)  # 谷歌翻译
 
 def get_md5_value(src):
-    _m = hashlib.md5()
-    _m.update(src.encode('utf-8'))
-    return _m.hexdigest()
+    try:
+        _m = hashlib.md5()
+        _m.update(src.encode('utf-8'))
+        return _m.hexdigest()
+    except Exception as e:
+        logging.error("Error calculating MD5: %s", e)
+        return None
 
 def getTime(e):
     try:
         struct_time = e.published_parsed
-    except:
+    except Exception as e:
+        logging.warning("Published date not found, using current time instead. Error: %s", e)
         struct_time = time.localtime()
     return datetime.datetime(*struct_time[:6])
-    logging.info("info")
-    logging.warn
 
 def getSubtitle(e):
     try:
