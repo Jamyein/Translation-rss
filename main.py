@@ -27,14 +27,11 @@ def get_md5_value(src):
 
 def getTime(e):
     try:
-        struct_time =e.published_parsed
-        if struct_time is None:  # 检查struct_time是否为None
-            raise AttributeError("published_parsed is None")
-        return datetime.datetime(*struct_time[:6])
+        struct_time = e.published_parsed
     except:
-        print(f"Error: {error}")  # 打印出更具体的错误信息
         struct_time = time.localtime()
-        return datetime.datetime(*struct_time[:6])
+    return datetime.datetime(*struct_time[:6])
+
 def getSubtitle(e):
     try:
         sub =e.subtitle
