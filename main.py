@@ -11,6 +11,12 @@ import datetime
 import time
 from rfeed import *
 import feedparser
+import logging
+import hashlib
+import datetime
+
+# 配置日志输出到控制台
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # pip install pygtrans -i https://pypi.org/simple
 # ref:https://zhuanlan.zhihu.com/p/390801784
@@ -31,6 +37,8 @@ def getTime(e):
     except:
         struct_time = time.localtime()
     return datetime.datetime(*struct_time[:6])
+    logging.info("info")
+    logging.warn
 
 def getSubtitle(e):
     try:
