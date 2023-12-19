@@ -73,7 +73,7 @@ class GoogleTran:
         except:
             return ""
     
-    def get_newconent(self,max=2):
+    def get_newcontent(self,max=2):
         item_list = []
         if len(self.d.entries) < max:
             max = len(self.d.entries)
