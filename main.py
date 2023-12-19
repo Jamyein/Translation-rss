@@ -38,13 +38,16 @@ def get_md5_value(src):
         logging.error("Error calculating MD5: %s", e)
         return None
 
-def getTime(e):
+def getTime(entry):
     try:
-        struct_time = e.published_parsed
+        struct_time = entry.published_parsed
+        if struct_time is None:
+            raise ValueError("Published parsed time is None")
+        return datetime.datetime(*struct_time[:6])
     except Exception as e:
-        logging.warning("Published date not found, using current time instead. Error: %s", e)
-        struct_time = time.localtime()
-    return datetime.datetime(*struct_time[:6])
+        logging.warning("Published date not found or invalid, using current time instead. Error: %s", e)
+        return datetime.datetime.now()
+
 
 def getSubtitle(e):
     try:
@@ -148,7 +151,7 @@ def tran(sec):
     # else:
     #    set_cfg(sec,'md5',new_md5)
     
-    c = GoogleTran(url,target=target,source=source).get_newconent(max=max_item)
+    c = GoogleTran(url,target=target,source=source).get_newcontent(max=max_item)
     
 
     with open(xml_file,'w',encoding='utf-8') as f:
