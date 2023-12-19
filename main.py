@@ -28,9 +28,13 @@ def get_md5_value(src):
 def getTime(e):
     try:
         struct_time =e.published_parsed
+        if struct_time is None:  # 检查struct_time是否为None
+            raise AttributeError("published_parsed is None")
+        return datetime.datetime(*struct_time[:6])
     except:
-        struct_time =time.localtime()
-    return datetime.datetime(*struct_time[:6])
+        print(f"Error: {error}")  # 打印出更具体的错误信息
+        struct_time = time.localtime()
+        return datetime.datetime(*struct_time[:6])
 def getSubtitle(e):
     try:
         sub =e.subtitle
@@ -126,12 +130,12 @@ def tran(sec):
 
     links+=[" - %s [%s](%s) -> [%s](%s)\n"%(sec,url,(url),get_cfg(sec,'name'),parse.quote(xml_file))]
 
-    new_md5= get_md5_value(url) # no use now
+    # new_md5= get_md5_value(url) # no use now
 
-    if old_md5 == new_md5:
-        return
-    else:
-        set_cfg(sec,'md5',new_md5)
+    # if old_md5 == new_md5:
+    #    return
+    # else:
+    #    set_cfg(sec,'md5',new_md5)
     
     c = GoogleTran(url,target=target,source=source).get_newconent(max=max_item)
     
