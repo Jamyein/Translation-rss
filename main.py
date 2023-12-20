@@ -38,9 +38,9 @@ def get_md5_value(src):
         logging.error("Error calculating MD5: %s", e)
         return None
 
-def getTime(entry):
+def getTime(e):
     try:
-        struct_time = entry.published_parsed
+        struct_time = e.published_parsed
         if struct_time is None:
             raise ValueError("Published parsed time is None")
         return datetime.datetime(*struct_time[:6])
