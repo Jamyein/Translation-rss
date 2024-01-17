@@ -8,7 +8,7 @@
 
  📢查看 [项目修改完善、已添加源及使用说明](https://github.com/Jamyein/Translation-rss/tree/main/illustrate)
 
- 📢查看[ 本页 ](https://rcy1314.github.io/Rss-Translation) 参考自[ rss-translate ](https://github.com/talengu/rss-translate)
+ 📢查看[ 本页 ](https://jamyein.github.io/Translation-rss/) 参考自[ rss-translate ](https://github.com/talengu/rss-translate)
 
 ## 已转换翻译源
  - source001 [http://feeds.feedburner.com/collabfund](http://feeds.feedburner.com/collabfund) -> [collabfund](rss/collabfund.xml)
