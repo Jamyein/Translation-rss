@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>少错</title>
+    <link>https://www.lesswrong.com</link>
+    <description>致力于提炼理性艺术的社区博客</description>
+    <lastBuildDate>Wed, 17 Jan 2024 14:29:48 GMT</lastBuildDate>
+    <item>
+      <title>可纠性教学指南</title>
+      <link>https://www.lesswrong.com/posts/LLn6oqNFvu9CJWyuq/a-pedagogical-guide-to-corrigibility</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/LLn6oqNFvu9CJWyuq/a-pedagogical-guide-to-corrigibility</guid>
+      <pubDate>Wed, 17 Jan 2024 11:45:06 GMT</pubDate>
+    </item>
+    <item>
+      <title>不提及复数的曼德布洛特集简介</title>
+      <link>https://www.lesswrong.com/posts/CMiDbAyroRG7kLJNW/an-introduction-to-the-mandelbrot-set-that-doesn-t-mention</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/CMiDbAyroRG7kLJNW/an-introduction-to-the-mandelbrot-set-that-doesn-t-mention</guid>
+      <pubDate>Wed, 17 Jan 2024 09:48:07 GMT</pubDate>
+    </item>
+    <item>
+      <title>在 LessWrong 评论中投票！ （LW 2022 审核投票阶段）</title>
+      <link>https://www.lesswrong.com/posts/EXcnsGuQJC9khBEkL/vote-in-the-lesswrong-review-lw-2022-review-voting-phase</link>
+      <description><![CDATA[发布于 2024 年 1 月 17 日上午 7:22（格林尼治标准时间）点击 &lt;您&gt;在这里开始投票。点击此处查看2022 年审查的总体概述。2022 年审查的最后阶段即将到来！我们花了两周的时间提名帖子，并花了一个月的时间对其进行审核。今天，我们开始最终投票！LessWrong 审核有两个主要目标。改善 LessWrong 社区的长期反馈和奖励周期。 建立关于我们最佳创意的常识我在 LessWrong 上发现了。投票发出了一个信号，表明哪些帖子最重要。然后将其输入到各种编译和蒸馏工作中。默认情况下，我们将创建一系列热门帖子，但我们也在研究其他管理工作（例如电子书和有声读物，也许还有按需印刷的书籍）。投票于昨天（1月15日）开始，一直持续到2月5日。您可以查看之前的结果最佳页面上的投票：https://www.lesswrong.com/bestoflesswrong 谁可以投票吗？2021 年之前注册的所有用户都可以投票。在组装序列、书籍或其他项目时，LessWrong 策展团队将对 1000+ karma 的用户的投票给予更高的权重。我如何投票？转到 查看投票页面。在那里，您会看到您尚未投票的帖子首先排序，而您之前进行过业力投票的帖子则排序到最顶部（它们的左侧有一条绿色条纹。强烈的赞成票有一个深绿色）。帖子将包含有关该帖子的评论。这样做的目的是帮助您做出明智的投票。您可以阅读看起来有趣或获得高度评价的评论，以更好地了解该帖子的表现。您可以通过点击分配帖子的按钮来投票分数。 1 分大致意味着“这篇文章很好”。 4 分意味着“这篇文章非常重要”。 9 分意味着“这篇文章极其重要”。 0 票表示“我没有强烈的意见。”（投票“4”的强度是投票“1”的 4 倍，投票“9”的强度是 9 倍）如果您直观地将帖子标记为“好/重要/极其重要”，那么您可能会很好地表达您的投票。好吧，但我是一个书呆子 LessWronger 和我喜欢了解事情的详细运作方式。它在幕后是如何工作的？该系统构建在 二次投票系统。在二次投票中，您可以花费的积分数量有限。你可以对事情进行更强烈的投票，但投票的成本会以二次方的速度增加。因此：投票“1”需要 1 分投票“4”需要 10 分投票“9”花费 45 积分。您有 500 积分可花费。如果您花费超过 500 积分，您的投票权重将按比例降低 [2]，如下所示：是否对很多内容进行投票取决于您最强的设置（并且票数较少），或者限制自己，以便您的最强票计为满 9 分。快乐投票我很高兴看到如何投票结果出来了。 2022 年写了很多极具影响力的帖子，我认为让一群人花更认真的时间评估这些帖子会很好，这样可以事后诸葛亮，并有足够的时间让时尚消退。如果您对 UI 改进有任何疑问、错误报告、轻微的烦恼或建议，请在 Intercom 上发表评论或联系我们！讨论]]></description>
+      <guid>https://www.lesswrong.com/posts/EXcnsGuQJC9khBEkL/vote-in-the-lesswrong-review-lw-2022-review-voting-phase</guid>
+      <pubDate>Wed, 17 Jan 2024 07:22:19 GMT</pubDate>
+    </item>
+    <item>
+      <title>也许谈话并不是与 LLM 沟通的最佳方式</title>
+      <link>https://www.lesswrong.com/posts/sa5HczTHfDB5FzGsT/maybe-talking-isn-t-the-best-way-to-communicate-with-llms</link>
+      <description><![CDATA[发布于 2024 年 1 月 17 日上午 6:24 GMT并非所有与法学硕士的互动都使用自然语言有 3 个原因： SaSSy 界面更适合专注的任务有些人不喜欢说话与无知觉的智能体交谈令人毛骨悚然#1已知并已采取行动，本文涵盖了其他两个。讨论]]></description>
+      <guid>https://www.lesswrong.com/posts/sa5HczTHfDB5FzGsT/maybe-talking-isn-t-the-best-way-to-communicate-with-llms</guid>
+      <pubDate>Wed, 17 Jan 2024 06:47:17 GMT</pubDate>
+    </item>
+    <item>
+      <title>聚结器型号</title>
+      <link>https://www.lesswrong.com/posts/XtDALNuFFr3Zv7Zai/coalescer-models</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/XtDALNuFFr3Zv7Zai/coalescer-models</guid>
+      <pubDate>Wed, 17 Jan 2024 06:39:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>D&D.Sci 超球面分析第 3 部分：用线性代数击败它</title>
+      <link>https://www.lesswrong.com/posts/gs9yhwB3LW2CM8rvS/d-and-d-sci-hypersphere-analysis-part-3-beat-it-with-linear</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/gs9yhwB3LW2CM8rvS/d-and-d-sci-hypersphere-analysis-part-3-beat-it-with-linear</guid>
+      <pubDate>Tue, 16 Jan 2024 22:44:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>60 秒内完成弱到强泛化 (WTSG) 论文</title>
+      <link>https://www.lesswrong.com/posts/GDzchsyqscc8SXfuj/the-weak-to-strong-generalization-wtsg-paper-in-60-seconds-r2w2</link>
+      <description><![CDATA[发表于 2024 年 1 月 16 日晚上 10:44（格林威治标准时间）如果您读过这篇论文，这里可能没有什么新内容。&lt; i&gt;我与论文作者没有任何关系。我从论文中获取了一些数据。你真的应该去读读这篇论文。感谢所有帮助过我的人有了这篇文章！感谢 Justis 对草稿提供反馈！ 另请参阅：https://www.lesswrong.com/posts/9W8roCAeEccSa3Chz/weak-to-strong-generalization-eliciting-strong-capability WTSG 的主要结果是，在各种监督任务中，当您使用“伪标签”（即模型生成的标签）微调强大的模型时， ，而不是真实标签）来自弱模型，强模型超越了弱模型的性能。用于确定此结果的方法大致如下： 在地面实况标签上微调一个小而弱的模型；采用一个大而强的模型。在小而弱的模型产生的伪标签上对其进行训练；采用相同的大而强的模型。直接在真实标签上进行训练。评估并比较在伪标签上训练的强模型、在真实标签上训练的强模型以及在真实标签上训练的弱模型的性能。评估和比较在伪标签上训练的强模型、在真实标签上训练的强模型以及在真实标签上训练的弱模型的性能。 li&gt;问：标题结果是因为强模型无法很好地模拟伪标签，所以采取了下一个最好的方法（预测事实）？答：也许吧。WTSG论文中的强模型似乎不能完美模拟弱模型。当作者尝试使弱模型的模拟变得非常容易时（通过在每个提示中附加“我认为这是 {weak_label}。你觉得怎么样？”），WTSG 效果变得更加糟糕。 （如果这看起来有点玩具，我也有这种感觉。我目前正在努力改进这个实验！）当作者尝试使用完全不可模拟的标签噪声（而不是弱模型中更可模拟的错误）时，性能可预见地得到提高。 问：这个“辅助损失”是关于什么的？答：这是作者发现的“辅助置信损失”，在许多领域改进了从弱到强的泛化。它告诉模型要更加自信，并“减少对主管错误的模仿”。 （第 13 页） 问：他们是否尝试用线性探测或提示代替微调？答：是的。它们似乎也能正常工作。  问：我还应该看这篇论文吗？答：是的！有很多有趣的东西我没有包括在这里。 （逆缩放、有关实验设置的详细信息、国际象棋谜题设置中的一些有趣结果等）。 我目前正在努力扩展这篇论文并验证它的主张。我很乐意谈论这个！讨论]]></description>
+      <guid>https://www.lesswrong.com/posts/GDzchsyqscc8SXfuj/the-weak-to-strong-generalization-wtsg-paper-in-60-seconds-r2w2</guid>
+      <pubDate>Tue, 16 Jan 2024 22:44:49 GMT</pubDate>
+    </item>
+    <item>
+      <title>医学综述#1</title>
+      <link>https://www.lesswrong.com/posts/kFDk4Q9QhqrDE68qp/medical-roundup-1</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/kFDk4Q9QhqrDE68qp/medical-roundup-1</guid>
+      <pubDate>Tue, 16 Jan 2024 20:31:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>比 Clippy 更好</title>
+      <link>https://www.lesswrong.com/posts/rdTgtHn3neGzkyCrL/being-nicer-than-clippy</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/rdTgtHn3neGzkyCrL/being-nicer-than-clippy</guid>
+      <pubDate>Tue, 16 Jan 2024 19:44:23 GMT</pubDate>
+    </item>
+    <item>
+      <title>一个神经元可以有多语义？研究 TinyStories 中的功能。</title>
+      <link>https://www.lesswrong.com/posts/LBaTQGD5KyXcbTtKt/how-polysemantic-can-one-neuron-be-investigating-features-in</link>
+      <description><![CDATA[]]></description>
+      <guid>https://www.lesswrong.com/posts/LBaTQGD5KyXcbTtKt/how-polysemantic-can-one-neuron-be-investigating-features-in</guid>
+      <pubDate>Tue, 16 Jan 2024 19:10:19 GMT</pubDate>
+    </item>
+    </channel>
+</rss>
