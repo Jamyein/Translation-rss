@@ -4,13 +4,13 @@
     <title>维基百科首页</title>
     <link>https://www.wikipedia.org</link>
     <description>维基百科首页全文RSS。获取更多全文RSS：https://feedx.net</description>
-    <lastBuildDate>Wed, 17 Jan 2024 14:29:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2024 01:22:53 GMT</lastBuildDate>
     <item>
-      <title>20240117</title>
-      <link>https://zh.wikipedia.org?20240117</link>
+      <title>20240118</title>
+      <link>https://zh.wikipedia.org?20240118</link>
       <description><![CDATA[]]></description>
-      <guid>https://zh.wikipedia.org?20240117</guid>
-      <pubDate>Wed, 17 Jan 2024 01:09:01 GMT</pubDate>
+      <guid>https://zh.wikipedia.org?20240118</guid>
+      <pubDate>Thu, 18 Jan 2024 01:09:01 GMT</pubDate>
     </item>
     </channel>
 </rss>
